@@ -39,9 +39,14 @@
             "color": {
               "field": "last eruption year",
               "type": "quantitative",
-              "scale": {"scheme": "oranges"}
+              "scale": {
+                  "type": "threshold",
+                  "domain": [-5000, 0, 1000, 2000, 2020],
+                  "range": ["#ffb1b1", "#ff8989", "#ff6262", "#ff0000", "#d80000"]
+
             }
           }
+        }
         }
       ]
     }
